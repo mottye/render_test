@@ -1,8 +1,4 @@
 import discord
-import requests
-import json
-import re
-from discord import Intents, Client, Interaction, Member, ButtonStyle, ui, app_commands
 import os
 
 # -------------------------------------- #
@@ -12,7 +8,6 @@ intents = discord.Intents.default()
 intents.message_content = True
 intents.members = True
 client = discord.Client(intents=intents)
-tree = app_commands.CommandTree(client)
 
 # ------------------------- #
 #       Bot起動時の処理       #
